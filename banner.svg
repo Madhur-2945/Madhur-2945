@@ -1,0 +1,85 @@
+<svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080c14"/>
+      <stop offset="100%" style="stop-color:#0e1628"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f8ef7;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#4f8ef7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#4f8ef7;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a8c8ff"/>
+      <stop offset="50%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#a8c8ff"/>
+    </linearGradient>
+    <linearGradient id="leftBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f8ef7;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#4f8ef7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#4f8ef7;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="subGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7eb3ff"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <filter id="nameglow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="subtleglow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="clip">
+      <rect width="900" height="220" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="900" height="220" fill="url(#bg)"/>
+
+    <circle cx="60" cy="40" r="1.5" fill="#4f8ef7" opacity="0.35"/>
+    <circle cx="120" cy="80" r="1" fill="#a78bfa" opacity="0.25"/>
+    <circle cx="190" cy="25" r="1.5" fill="#4f8ef7" opacity="0.2"/>
+    <circle cx="780" cy="50" r="1.5" fill="#4f8ef7" opacity="0.3"/>
+    <circle cx="845" cy="95" r="1" fill="#a78bfa" opacity="0.25"/>
+    <circle cx="855" cy="175" r="1.5" fill="#4f8ef7" opacity="0.2"/>
+    <circle cx="710" cy="195" r="1" fill="#a78bfa" opacity="0.2"/>
+    <circle cx="95" cy="185" r="1" fill="#4f8ef7" opacity="0.2"/>
+    <circle cx="35" cy="145" r="1.5" fill="#a78bfa" opacity="0.2"/>
+    <circle cx="310" cy="15" r="1" fill="#4f8ef7" opacity="0.15"/>
+    <circle cx="590" cy="205" r="1" fill="#a78bfa" opacity="0.15"/>
+
+    <line x1="60" y1="40" x2="120" y2="40" stroke="#4f8ef7" stroke-width="0.5" opacity="0.18"/>
+    <line x1="120" y1="40" x2="120" y2="80" stroke="#4f8ef7" stroke-width="0.5" opacity="0.18"/>
+    <line x1="845" y1="95" x2="845" y2="50" stroke="#a78bfa" stroke-width="0.5" opacity="0.18"/>
+    <line x1="845" y1="50" x2="780" y2="50" stroke="#a78bfa" stroke-width="0.5" opacity="0.18"/>
+
+    <rect x="0" y="0" width="3" height="220" fill="url(#leftBar)"/>
+
+    <rect x="0" y="0" width="900" height="1" fill="url(#accent)" opacity="0.5"/>
+    <rect x="0" y="219" width="900" height="1" fill="url(#accent)" opacity="0.5"/>
+
+    <text x="24" y="36" font-family="'Courier New', monospace" font-size="11" fill="#00d084" opacity="0.55">~/madhur $</text>
+
+    <polygon points="825,58 852,74 852,104 825,120 798,104 798,74" fill="none" stroke="#4f8ef7" stroke-width="0.8" opacity="0.18"/>
+    <polygon points="825,70 844,81 844,103 825,114 806,103 806,81" fill="none" stroke="#a78bfa" stroke-width="0.5" opacity="0.12"/>
+
+    <text x="450" y="108" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="48" font-weight="700" fill="url(#nameGrad)" text-anchor="middle" filter="url(#nameglow)">Madhur</text>
+
+    <rect x="310" y="122" width="280" height="1" fill="url(#accent)" opacity="0.7"/>
+
+    <text x="450" y="152" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="url(#subGrad)" text-anchor="middle" letter-spacing="4" filter="url(#subtleglow)" opacity="0.9">CYBERSECURITY  &amp;  PENETRATION TESTING</text>
+
+    <circle cx="244" cy="148" r="2" fill="#a78bfa" opacity="0.6"/>
+    <circle cx="656" cy="148" r="2" fill="#4f8ef7" opacity="0.6"/>
+
+  </g>
+</svg>
